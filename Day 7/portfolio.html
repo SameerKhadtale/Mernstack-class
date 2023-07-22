@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameer Khadtale</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+
+    #screen {
+      /* border: 5px solid black; */
+      height: 3000px;
+      width: 100%;
+      background-image: url(https://contentstatic.techgig.com/photo/86001236/coding-for-students-learn-with-these-7-apps.jpg?10556;);
+      background-size: contain;
+    }
+
+    #navbar {
+      width: 70%;
+      /* border:5px solid green; */
+      height: 70px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      color: antiquewhite;
+    }
+
+    .padding-10 {
+      padding: 10px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    #right-navi {
+      padding: 20px;
+    }
+
+    #right-navi div {
+      /* border: 1px solid blue; */
+      /* color: red; */
+      margin-left: 20px;
+    }
+
+    #home {
+      width: 70%;
+      margin: auto;
+      height: 600px;
+      /* border: 5px solid blue; */
+      color: white;
+      text-align: center;
+    }
+
+    #home div h1 {
+      font-size: 75px;
+    }
+
+    #home div h3 {
+      font-size: 44px;
+    }
+
+    #about {
+      width: 70%;
+      margin: auto;
+      /* border : 5px solid black; */
+      box-shadow: 25px 25px 25px black;
+      height: 600px;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: white;
+
+    }
+
+    #about-left {
+      width: 50%;
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: space-evenly;
+      height: 60%;
+      margin-top: 80px;
+    }
+
+    #about-right {
+      width: 50%;
+      /* border: 2px solid red; */
+      margin-top: 80px;
+    }
+
+    .w-42 {
+      width: 80%;
+    }
+    
+
+    .fs-16 {
+      font-size: 24px;
+    }
+
+      .mb-20 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      #icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid black; */
+        width: 45%;
+        height: 40px;
+        padding-top: 13px;
+      }
+
+      #icons div {
+        border: 4px solid #0078ff;
+        width: 32px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 10px;
+        padding-top: 15px;
+      }
+
+      #icons div:hover {
+        background-color: #0078ff;
+        color: white;
+        border: 4px solid rgb(197, 195, 195);
+      }
+
+      #home div {
+        margin-top: 150px;
+
+      }
+
+      #about {
+        width: 70%;
+        margin: auto;
+        border: 2px solid black;
+        height: 500px;
+      }
+  </style>
+</head>
+
+<body>
+
+  <div id="screen">
+    <div id="navbar">
+      <div class="padding-10">
+        <h1>Sameer Khadtale</h1>
+      </div>
+      <div id="right-navi" class="flex">
+        <div><b>HOME</b></div>
+        <div><b>ABOUT</b></div>
+        <div><b>SKILLS</b></div>
+        <div><b>PROJECTS</b></div>
+        <div><b>BLOG</b></div>
+        <div><b>CONTACT</b></div>
+
+      </div>
+
+    </div>
+    <div id="home">
+      <div>
+        <h1>Hi There,</h1>
+        <h1>I'm Sameer Khadtale</h1> <br>
+        <h3>MERNStack Developer</h3>
+      </div>
+    </div>
+    <div id="about">
+      <div id="about-left">
+        <div class="w-42">
+          <img style="width: 100%; height : 100%; border-radius: 10px;" src="./../logo.jpg">
+        </div>
+
+        <div style="font-size:25px;" class="w-42">
+          <p class="fs-16 mb-20"><b>Name : <br></b> Sameer Khadtale</p>
+          <p class="mb-20"><b>Profile :</b><br> MERNStack Developer</p>
+          <p class="mb-20"><b>Email :</b> khadtale10rocks@gmail.com</p>
+          <p class="mb-20"><b>Phone :</b> <br> +91 7030493754</p>
+        </div>
+      </div>
+      <div id="about-right">
+        <h1 style="margin-left: 20px;">About me</h1>
+        <div style="margin-left: 20px;  border: 3px solid #0078ff; width: 13%;"></div>
+        <p style="margin-left: 20px; color: #8988a9; font-size: 25px; margin-top: 25px;">A passionate Full Stack web Developer gaining
+          experience of building Web applications with
+          JavaScript, ReactJs, Node.js, MongoDB and some other libraries and frameworks.</p> <br>
+        <button
+          style=" margin-left: 20px; background-color: #0078ff; color:black; border: none; width: 150px; height: 35px; font-size: 20px; margin-top: 20px;">Resume</button>
+        <div id="icons">
+          <div>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="skills">
+    <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+
+    </div>
+
+    </div>
+    <div id="projects">
+
+    </div>
+    <div id="blog">
+
+    </div>
+    <div id="contact">
+
+    </div>
+    <script src="https://kit.fontawesome.com/d49918b067.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
