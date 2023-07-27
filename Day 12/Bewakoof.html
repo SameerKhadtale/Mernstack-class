@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #nav {
+            width: 100%;
+            height: 150px;
+            background-color: white;
+            /* border: 1px solid black; */
+            position: fixed;
+            top: 0px;
+        }
+
+        #nav1 {
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid blue; */
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+            background-color: rgb(238, 238, 238);
+
+        }
+
+        #nav2 {
+            width: 90%;
+            height: 60px;
+            margin: auto;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        #nav3 {
+            width: 100%;
+            height: 60px;
+            /* border: 1px solid purple; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-transform: uppercase;
+
+        }
+
+        #nav3 div {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #nav1left {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50px;
+            align-items: center;
+        }
+
+        #nav1right {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+        #nav2left {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #nav2right {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #Body {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 600px;
+        }
+
+        .elements {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .img {
+            width: 33%;
+            height: 600px;
+            /* border: 1px solid violet; */
+        }
+
+        .img img {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        #mid {
+            height: 300px;
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .pic {
+            width: 12%;
+            height: 250px;
+        }
+
+        .pic img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tag {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        #long {
+            width: 100%;
+
+        }
+
+        #long img {
+            width: 100%;
+        }
+
+        #heading {
+            text-align: center;
+            font-size: larger;
+            margin-top: 12px;
+        }
+
+        #dual {
+            width: 100%;
+            height: 550px;
+            display: flex;
+            /* border: 5px solid green; */
+            margin-top: 15px;
+        }
+
+        .split {
+            width: 50%;
+            height: 100%;
+
+        }
+
+        .split img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #trending {
+            width: 100%;
+            height: 300px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .trend {
+            width: 100%;
+            height: 350px;
+            /* border: 5px solid red; */
+        }
+
+        .trend img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #container {
+            width: 100%;
+            /* height: 700px; */
+            /* border: 2px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .images {
+            width: 49%;
+            height: 420px;
+            margin: auto;
+        }
+
+        .images img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .imgs {
+            margin-bottom: 11px;
+        }
+
+        #Accessories {
+            width: 85%;
+            height: 400px;
+            margin: auto;
+            display: flex;justify-content: space-around;
+            /* border: 2px solid purple; */
+        }
+
+        .access img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #best {
+           width: 100%;
+           height: 380px;
+           margin: auto;
+           margin-top: 20px;
+           display: flex;justify-content: space-around;
+           /* border: 1px solid purple; */
+        }
+
+        .bimg img {
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div>
+
+        <div>
+            <div id="nav">
+                <div id="nav1">
+                    <div id="nav1left">
+                        <div class="left">Offers</div>
+                        <div class="left">Fanbook</div>
+                        <div class="left">Download App</div>
+                        <div class="left">TriBe Membership</div>
+                    </div>
+                    <div id="nav1right">
+                        <div class="left">Contact Us</div>
+                        <div class="left">Track Order</div>
+                    </div>
+                </div>
+                <div id="nav2">
+                    <div id="nav2left">
+                        <div class="elements"><img src="./../shop logo.PNG" /></div>
+                        <div class="elements">MEN</div>
+                        <div class="elements">WOMEN</div>
+                        <div class="elements">MOBILE COVERS</div>
+                    </div>
+                    <div id="nav2right">
+                        <div style="width: 300px;" class="elements">
+                            <div style="display: flex;height: 30px;background-color: rgb(234,234,234)">
+                                <div style="background-color: rgb(234,234,234);"><i
+                                        style="position: relative;top: 6px;left: 5px;"
+                                        class="fa-solid fa-magnifying-glass"></i></div>
+                                <div style="width: 300px;height: 30px;"><input
+                                        style="width: 250px;height: 100%;border: none;outline: none;background-color: rgb(234,234,234);"
+                                        type="text" placeholder="Search by product,category or collection" /></div>
+                            </div>
+                        </div>
+                        <div class="elements"><b>|</b></div>
+                        <div class="elements">Login</div>
+                        <div class="elements"><i class="fa-regular fa-heart"></i></div>
+                        <div class="elements"><i class="fa-solid fa-bag-shopping"></i></div>
+                    </div>
+                </div>
+                <div id="nav3">
+                    <div>Bewakoof Air</div>
+                    <div>Men</div>
+                    <div>Women</div>
+                    <div>Accessories</div>
+                    <div>Official Merch</div>
+                    <div>Plus Size</div>
+                    <div>Teens</div>
+
+                </div>
+            </div>
+                  <div style="width: 100%;height: 150px;"></div>
+        </div>
+        <div id="Body">
+            <div class="img"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/newbanner-1x1-GraphicOversizedTees-common-1690193742.jpg" />
+            </div>
+            <div class="img"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1X1-STATIC-linen-pants--1--1690284496.jpg" />
+            </div>
+            <div class="img"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/relaunch-AIR-newbanner-1x1-comon-02-1690285831.jpg" />
+            </div>
+        </div>
+        <!-- <div>Footer</div> -->
+
+        <div id="mid">
+
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-newarrivals-common-1682570370.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+            <div class="pic"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                <div class="tag">New Arrivals</div>
+            </div>
+        </div>
+        <div id="long">
+            <img src="https://images.bewakoof.com/uploads/grid/app/brand-strip-1683780891-1684740361.gif" />
+        </div>
+
+        <div id="heading">
+            <h3>Designs of the Week</h3>
+        </div>
+
+        <div id="dual">
+            <div class="split"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men-1690262939.jpg" />
+            </div>
+            <div class="split"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women-1690262940.jpg" />
+            </div>
+        </div>
+
+        <div id="heading">
+            <h3>TRENDING CATEGORIES</h3>
+        </div>
+
+        <div id="trending">
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-oversized-tees-m-1685086219.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-shorts-1686063035.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-joggers-m-1684997505.jpg" /></div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-vests-1686063036.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-fullsleeve-1686063034.jpg" />
+            </div>
+        </div>
+
+        <div id="trending">
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-oversized-tees-m-1685086219.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-shorts-1686063035.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-joggers-m-1684997505.jpg" /></div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-vests-1686063036.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-fullsleeve-1686063034.jpg" />
+            </div>
+        </div>
+
+
+        <div id="heading">
+            <h3>TOO HOT TO BE MISSED</h3>
+        </div>
+
+        <div id="container">
+            <div class="images imgs"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/mid-size-hygiene-revamp-desktop-buy3-1689160570.jpg" />
+            </div>
+            <div class="images imgs"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-utility-cargos-1690175164.jpg" />
+            </div>
+            <div class="images"><img src="https://images.bewakoof.com/uploads/grid/app/Untitled-1-1690189666.png" />
+            </div>
+            <div class="images"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-mid-banner-bob-1690188914.jpg" /></div>
+        </div>
+
+
+        <div style="margin-top: 22px;" id="heading">
+            <h3>CATEGORIES TO BAG</h3>
+        </div>
+
+        <div id="trending">
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-oversized-tees-m-1685086219.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-shorts-1686063035.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-joggers-m-1684997505.jpg" /></div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-vests-1686063036.jpg" />
+            </div>
+            <div class="trend"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-fullsleeve-1686063034.jpg" />
+            </div>
+        </div>
+
+        <div id="Body">
+            <div class="img"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/newbanner-1x1-GraphicOversizedTees-common-1690193742.jpg" />
+            </div>
+            <div class="img"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1X1-STATIC-linen-pants--1--1690284496.jpg" />
+            </div>
+            <div class="img"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/relaunch-AIR-newbanner-1x1-comon-02-1690285831.jpg" />
+            </div>
+        </div>
+
+        <div style="margin-top: 22px;" id="heading">
+            <h3>TOP ACCESSORIES</h3>
+        </div>
+
+       <div id="Accessories">
+           <div class="access"><img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-180x262-mobile-covers-1687757495.jpg"/></div>
+           <div class="access"><img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-180x262-sliders-1687757497.jpg"/></div>
+           <div class="access"><img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-180x262-backpacks-1687757496.jpg"/></div>
+           <div class="access"><img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-180x262-caps-1687757497.jpg"/></div>
+       </div>
+
+       <div style="margin-top: 22px;" id="heading">
+        <h3>BESTSELLERS</h3>
+    </div>      
+        <div id="best">
+            <div class="bimg"><img src="./../b1.PNG"/></div>
+            <div class="bimg"><img src="./../b2.PNG"/></div>
+            <div class="bimg"><img src="./../b3.PNG"/></div>
+            <div class="bimg"><img src="./../b4.PNG"/></div>
+            <div class="bimg"><img src="./../b5.PNG"/></div>
+            
+        </div>
+         
+        <div style="font-size: 12px;color: rgb(131,162,162); text-decoration: underline; margin-bottom: 30px;"id="heading">
+            <h3>Explore All</h3>
+        </div>
+        <div style="margin-top: 22px;margin-bottom: 15px;" id="heading">
+            <h3>OUR BEST PICKS</h3>
+        </div>      
+           
+        <div id="container">
+            <div class="images imgs"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/mid-size-hygiene-revamp-desktop-classicdresses02-1690176470.jpg" />
+            </div>
+            <div class="images imgs"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/Untitled-1-1690189666.png" />
+            </div>
+            <div class="images"><img src="https://images.bewakoof.com/uploads/grid/app/plus-size-common-1683622044.jpg" />
+            </div>
+            <div class="images"><img
+                    src="https://images.bewakoof.com/uploads/grid/app/mid-size-hygiene-revamp-customise-model-desktop-new-1689142924.jpg" /></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px;"><img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1672040129.jpg"/></div>
+    <div><img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg"/></div>
+    <script src="https://kit.fontawesome.com/d49918b067.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
