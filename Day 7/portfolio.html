@@ -16,10 +16,11 @@
 
     #screen {
       /* border: 5px solid black; */
-      height: 3000px;
+      height: 1000px;
       width: 100%;
       background-image: url(https://contentstatic.techgig.com/photo/86001236/coding-for-students-learn-with-these-7-apps.jpg?10556;);
-      background-size: contain;
+      background-size: cover;
+    
     }
 
     #navbar {
@@ -53,6 +54,7 @@
     #home {
       width: 70%;
       margin: auto;
+      margin-top: 150px;
       height: 600px;
       /* border: 5px solid blue; */
       color: white;
@@ -68,7 +70,7 @@
     }
 
     #about {
-      width: 70%;
+      width: 80%;
       margin: auto;
       /* border : 5px solid black; */
       box-shadow: 25px 25px 25px black;
@@ -88,6 +90,10 @@
       margin-top: 80px;
     }
 
+    #about-left img{
+               
+    }
+
     #about-right {
       width: 50%;
       /* border: 2px solid red; */
@@ -96,6 +102,9 @@
 
     .w-42 {
       width: 80%;
+      height: 80%;
+      margin: 10px;
+   
     }
     
 
@@ -134,15 +143,40 @@
       }
 
       #home div {
-        margin-top: 150px;
+        padding-top:10px;
 
       }
 
       #about {
-        width: 70%;
-        margin: auto;
-        border: 2px solid black;
+        width: 90%;
+        /* border: 2px solid black; */
         height: 500px;
+        padding-top: 30px;
+        
+      }
+/* 
+      #skills {
+         
+      }  */
+
+      .ski {
+        width: 30%;
+        height: 280px;
+        display: flex;justify-content: space-around;flex-wrap: wrap;
+        /* border: 5px solid green; */
+        margin-bottom: 20px;
+        flex-direction: column;align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        
+      }
+
+      .ski img {
+        /* width: 80%; */
+        height: 80%;
+        margin-left: auto;margin-right: auto;
+        box-shadow: 8px 8px 8px;
+
       }
   </style>
 </head>
@@ -172,10 +206,15 @@
         <h3>MERNStack Developer</h3>
       </div>
     </div>
+
+
+
+     <div style="background-color: rgb(207, 189, 189);padding-top: 50px;">
+
     <div id="about">
       <div id="about-left">
         <div class="w-42">
-          <img style="width: 100%; height : 100%; border-radius: 10px;" src="./../logo.jpg">
+          <img style="width: 100%; height : 100%; border-radius: 10px;   position: relative;top: 50px" src="./../Photos/logo.jpg">
         </div>
 
         <div style="font-size:25px;" class="w-42">
@@ -207,14 +246,14 @@
       </div>
 
     </div>
-    <div id="skills">
-    <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+    <div style="margin-top: 150px;" id="skills">
+    <div style="width:80% ;height: 600px; margin:auto;display: flex; justify-content:space-between;flex-wrap: wrap;">
+        <div class="ski"><img src="./../Photos/skills/html.PNG"/><div>HTML</div></div>
+        <div class="ski"><img src="./../Photos/css.PNG"/><div>CSS</div></div>
+        <div class="ski"><img src="./../Photos/skills/js.PNG"/><div>JAVASCRIPT</div></div>
+        <div class="ski"><img src="./../Photos/skills/R.PNG"/><div>REACT</div></div>
+        <div class="ski"><img src="./../Photos/skills/Node.PNG"/><div>NODE.JS</div></div>
+        <div class="ski"><img src="./../Photos/skills/mongo.PNG"/><div>MONGO DB</div></div>
 
     </div>
 
@@ -226,6 +265,8 @@
 
     </div>
     <div id="contact">
+
+    </div>
 
     </div>
     <script src="https://kit.fontawesome.com/d49918b067.js" crossorigin="anonymous"></script>
