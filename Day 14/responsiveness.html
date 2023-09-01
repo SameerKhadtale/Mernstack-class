@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #grandparent {
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #grandparent>div {
+            border: 5px solid red;
+            width: 22%;
+            height: 200px;
+            
+        }
+        
+        #grandparent > div:nth-child(3) > div {
+            /* font-size: 40px; */
+            border: 2px solid seagreen;  
+        }
+
+
+        @media screen and (min-width :350px) and (max-width :450px){
+           #grandparent {
+            flex-direction:column;
+           } 
+        }
+
+        #grandparent > div {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div>1- Children</div>
+        <div>2- Children</div>
+        <div>
+            <div>1 Grandchildren</div>
+            <div>2 Grandchildren</div>
+            <div>3 Grandchildren</div>
+            <div>4 Grandchildren</div>
+        </div>
+        <div>4- Children</div>
+    </div>
+</body>
+</html>

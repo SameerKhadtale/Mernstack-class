@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0,0,0);
+        color:rgb(255,255,255) ;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+        #screen {
+            width: 100%;
+            height: 2000px;
+            /* border: 4px solid goldenrod; */
+        }
+        
+        #bars{
+            display: none;
+        }
+
+
+        #navbar {
+            height:70px;
+            display: flex;justify-content: space-around;
+            position: sticky;
+            top: 0;
+            left: 0;
+            border: 1px solid wheat;
+            
+        
+        }
+
+       #logo {
+          width: 20%;
+          /* margin-left: 5px; */padding: 15px;
+          /* border: 2px solid white; */
+          margin-top: 12px;
+             
+
+       }
+
+       #main {
+        width: 100%;
+        height: 450px;
+        /* margin: auto; */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+       }
+
+        #logo > p:nth-child(2) {
+            display: none;
+
+        }
+        #navbar :nth-child(4)  {
+            @media screen and (max-width: 800px) {
+            
+            }
+            
+        }
+
+        #tab {
+            width: 40%;
+           display: flex;justify-content: space-around;
+           /* border: 2px solid white; */
+           align-items: center;
+        }
+
+         #social {
+          width: 8%;
+          display: flex;justify-content: space-around;
+          /* border: 2px solid white; */
+          align-items: center;
+        }
+
+        #social > div {
+            margin-right: 5px;
+        }
+        #navbar {
+            justify-content: space-between;
+        }
+       @media screen and (max-width:800px) {
+        #logo {
+            margin-left: 20px;
+            
+        }
+
+        #logo>p : nth-child(1) {
+          display: none;
+        }
+
+        #logo >p :nth-child(2) {
+            display: block;
+        }
+
+        #tab {
+            display: none;
+          }
+            #social {
+            display: none;
+          }
+          #bars {
+            margin-right: 35px;
+        margin-top: 25px;
+        display: block;
+       }
+       
+       }
+         #articles {
+            width: 90%;
+            height: auto;
+            margin: auto;
+            /* border: 2px solid green; */
+            display: flex; justify-content: space-between;
+            margin-top: 100px;
+         }
+          
+         #main > p {
+            margin-top: 30px;
+            margin-left: 40px;
+            width: 40%;
+         }
+
+
+         #button {
+            margin-top: 100px;
+            margin-left: 40px;
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: rgb(171,168,168);
+
+         }
+
+            #articles  { 
+                
+            }
+
+         #articles > div :nth-child(1)> button {
+            /* margin-top: 150px; */
+            
+            
+         }
+         #articles > div:nth-child(1) {
+            width : 25%;
+            /* height :300px; */
+         }
+
+         #articles > div:nth-child(2) {
+            width: 70%;
+            /* height : 250px; */
+            
+         }
+       
+
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/d49918b067.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="screen">
+  <div id="navbar">
+    <div id="logo">
+        <p>Tech Blog</p>
+        <p>Bold M5</p>
+    </div>
+    <div id="tab">
+        <div>Home</div>
+        <div>Blog</div>
+        <div>Articles</div>
+        <div>About Us</div>
+        <div>FAQ</div>
+    </div>
+    <div id="social">
+        <div><i class="fa-brands fa-facebook-f  fa-l"></i></div>
+        <div><i class="fa-brands fa-twitter  fa-l"></i></div>
+        <div><i class="fa-brands fa-instagram  fa-l"></i></div>
+    </div>
+    <div id="bars"><i class="fa-solid fa-bars"></i></div>
+  </div>
+  <div id="home">
+    <div id="main">
+        <div style="margin-top: 80px;"><img src="./tech blog.PNG"/></div>
+        <h1 style="font-weight: lighter;font-size: 80px;">Tech Blog</h1>
+        <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore
+            voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button id="button">Read more<i style=" height: 40px;width: 170px;border-radius: 20px;background-color: rgb(171,168,168);background-color: transparent;"  class="fa-solid fa-play"></i></button>
+    </div>
+
+  </div>
+        <div id="articles">
+            <div>
+                <p>Technologies</p>
+                <h1>Most popular <br/>articles</h1>
+                <p style="margin-top: 80px;">Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae consectetur cumque dolores dolorum enim inventore iure minus nostrum nulla numquam quam quia quod, reprehenderit.</p>
+                <button id="button">Read more<i style="background-color: transparent;margin-left: 5px;margin-top: 2px;"  class="fa-solid fa-play"></i></button>
+            </div>
+                <div style="display: flex;justify-content: space-around;">
+                <div style="width:40%;margin-right: -100px"><img style="width: 100%;height: 100%;object-fit: cover;"   src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg"/></div>
+                <div style="width:40%;margin-right: -60px"><img style="width: 100%;height: 100%;object-fit: cover;"  src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg"/></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
