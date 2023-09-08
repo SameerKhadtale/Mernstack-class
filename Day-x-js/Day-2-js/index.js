@@ -11,13 +11,13 @@
 //   if() {
 
 // }else{
-    
+
 // }
 
 // var age = 24
 // // prompt("Your age is", $(age))
 // console.log(age)
- 
+
 // if (age => 18){
 //     console.log("You are alowed for Driving License")
 // }
@@ -36,15 +36,30 @@
 // ||  -- one condition is ture then will return true
 
 
-    console.log(33 < 69 && 100 < 210 && 980 < 1010)
-    console.log(33 > 69 || 100 > 210 || 980 > 1010)
+// console.log(33 < 69 && 100 < 210 && 980 < 1010)
+// console.log(33 > 69 || 100 > 210 || 980 > 1010)
 
-    
-    console.log(33 < 69 && 100 < 210 && 980 < 1010)
-    console.log(33 > 69 || 100 > 210 || 980 < 1010)
 
-    // var age = 18;
-    // var had = false;
+// console.log(33 < 69 && 100 < 210 && 980 < 1010)
+// console.log(33 > 69 || 100 > 210 || 980 < 1010)
+
+age = 82;
+var PH = false;
+console.log(age)
+// console.log(PH)
+
+if( age >=19 && age<=75 && HP == false){
+    console.log(`Allowed for Driving License as Age is - ${age}`)
+} else if(age == 18 && !PH){
+console.log(`Allowed for Learning License as Age is - ${age}`)
+} else if (age== 18 && PH == true)
+console.log(`You will be provided a secure Government Job`)
+else if (age < 18){
+    console.log(`You have to complete 18 Yrs as Age is -${age}`)
+}else {
+    console.log(`Not allowed for license as Age -${age}`)
+}
+
 
 
     // if (age >= 19 && age <= 80 && had == false) {
