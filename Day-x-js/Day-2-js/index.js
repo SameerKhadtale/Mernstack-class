@@ -4,9 +4,44 @@
 
 // Conditional Statements
 
-    // console.log(33 < 69 && 100 < 210 && 980 < 1010)
-    // console.log(33 > 69 || 100 > 210 || 980 > 1010)
 
+// if else , switch
+
+// * if else syntax : 
+//   if() {
+
+// }else{
+    
+// }
+
+// var age = 24
+// // prompt("Your age is", $(age))
+// console.log(age)
+ 
+// if (age => 18){
+//     console.log("You are alowed for Driving License")
+// }
+//  else{
+//     console.log("You will have to wait till 18")
+//  }
+
+//  = assign value
+//  == compare only data
+//  === strict checking(compare data+datatype)
+
+// console.log(200=="200")
+
+
+// &&  -- all condition must be true
+// ||  -- one condition is ture then will return true
+
+
+    console.log(33 < 69 && 100 < 210 && 980 < 1010)
+    console.log(33 > 69 || 100 > 210 || 980 > 1010)
+
+    
+    console.log(33 < 69 && 100 < 210 && 980 < 1010)
+    console.log(33 > 69 || 100 > 210 || 980 < 1010)
 
     // var age = 18;
     // var had = false;
@@ -41,9 +76,9 @@
 // num--;
 // num--;
 // console.log(num)
-var i = 10;
-for ( var i; i <= 100; i = i + i) {
-    console.log(i)
-    // i = i + 1
-}
+// var i = 10;
+// for ( var i; i <= 100; i = i + i) {
+//     console.log(i)
+//     // i = i + 1
+// }
 
