@@ -1,8 +1,11 @@
-var input = 5
+var input = 7;
 
-function printPattern(stars){
-    for(var i=1;i <=stars;i++ ){
-    var pattern = ""
-    for(){}
+function printStars(num){
+    for(i=1;i<=num;i++) {
+        pattern = ""
     }
+    for(j=1;j<=i;j++){
+     pattern = pattern + "*"
+    }console.log(pattern)
 }
+printStars(pattern)
