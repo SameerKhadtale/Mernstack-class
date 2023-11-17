@@ -1,19 +1,13 @@
 // Q Given an array 
-
 // array
-
 // var array = ["adw", 23, true]
-
-
 // Object
-
 // var kuchbhi =
 //     { key: "value" }
 // JSON
 // { "key" : "value" }
 
-var kuchbhi = { name: "Awdiz", age: 5, noOfDays: ["Monday", { day: "Tuesday" }], isOpen: true, myData: { hi: "hello", myArray: [1, 2, 4, 5, 6,987] } }
-
+var kuchbhi = { name: "Awdiz", age: 5, noOfDays: ["Monday", { day: "Tuesday" }], isOpen: true, myData: { hi: "hello", myArray: [1, 2, 4, 5, 6, 7,8] } }
 
 console.log(kuchbhi)
 console.log(kuchbhi.name)
@@ -25,17 +19,16 @@ console.log(kuchbhi.myData.myArray[kuchbhi.myData.myArray.length - 1])
 
 
 // JSON 
-
-// js to json = code to browser = JSON.stringify(localStorage.setItem({ key: "value" }))
+// js to json = code to browser = JSON.stringify(localStorage.setItem({ key : "value" }))
 // json to js = browser to code = JSON.parse(localStorage.getItem("name"))
 
 
 // localStorage
 
-// // save to ls
+// save to ls
 // localStorage.setItem(key, value)
 
-// // read from ls
+// read from ls
 // localStorage.getItem(key)
 // const mydata = localStorage.getItem("name")
 

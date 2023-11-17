@@ -37,7 +37,7 @@
 //     }
 //     else  { 
 //         evencount++;
-//         // console.log(evencount)
+//     console.log(evencount)
 //     }
 // }
 

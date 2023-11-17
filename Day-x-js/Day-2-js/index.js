@@ -48,7 +48,7 @@ var PH = false;
 console.log(age)
 // console.log(PH)
 
-if( age >=19 && age<=75 && HP == false){
+if( age >=19 && age<=75 && PH == false){
     console.log(`Allowed for Driving License as Age is - ${age}`)
 } else if(age == 18 && !PH){
 console.log(`Allowed for Learning License as Age is - ${age}`)
